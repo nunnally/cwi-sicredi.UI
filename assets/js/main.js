@@ -15,9 +15,11 @@ function accessInput() {
 
 let menuToggles = document.querySelectorAll('.toggle-menu');
 let menuUI = document.getElementById("menu");
+let body = document.body;
 menuToggles.forEach(el => el.addEventListener('click', closeOpenMenu));
 
 function closeOpenMenu() {
     menuUI.classList.contains('hide')?menuUI.classList.remove('hide'):menuUI.classList.add('hide');
-    
+    body.classList.contains('blur')?body.classList.remove('blur'):body.classList.add('blur');
+
 }

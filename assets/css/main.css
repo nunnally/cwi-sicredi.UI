@@ -183,7 +183,7 @@ body {
     text-decoration: none;
     padding: 8px;
     }
-.blur div:not(#menu){
+.blur >div:not(#menu){
     filter: blur(0.1rem);
   }
 
