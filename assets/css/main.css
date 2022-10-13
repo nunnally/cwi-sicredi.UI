@@ -82,7 +82,6 @@ body {
 }
 .search {
     background: black;
-    
 }
 .stack {
   background: #3FA111;;
@@ -92,9 +91,9 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    width: 1200px;
-    margin: 0 auto;
     margin-top: 130px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .content h1 {
     color: #737372;
@@ -120,6 +119,12 @@ body {
 
 .middle {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.8);
+    max-height: 450px;
+    max-width: 330px;
+}
+
+.middle img {
+    width: 100%;
 }
 .sidebar {
     width: 193px;
@@ -177,7 +182,9 @@ body {
     padding: 5px 10px;
     font-size:20px;
 }
-#menu ul li a:link {
+#menu ul li a {
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
     color: rgb(228, 226, 226);
     font-size: 14px;
     text-decoration: none;
@@ -190,3 +197,77 @@ body {
 .hide {
     display:none;
 }
+
+@media (max-width: 1160px) {
+    .middle {
+        max-height: 350px;
+        max-width: 240px;
+    }
+    .middle {
+        width: 100%;
+    }
+  
+  }
+
+
+  .open-account {
+      display:none;
+      margin-left: 30px;
+      font-size: 20px;
+  }
+  .access-account {
+    display:none;
+    margin-left: 30px;
+    font-size: 20px;
+}
+  @media (max-width: 1050px) {
+    .middle {
+        display:none
+    }
+
+    .content {
+        justify-content: center;
+    }
+    .content h1 {
+        font-weight: 600;
+    }
+    .sidebar {
+    padding-top: 50px  ;
+    width: 100%;
+    font-size: 19px;
+    text-align: center;
+    }
+    .sidebar a {
+        font-weight: bold;
+    }
+
+    .sidebar span {
+
+        font-size: 50px;
+        font-weight: bold;
+    }
+  
+  }
+  @media (max-width: 900px) {
+    .access {
+        display:none !important;
+    }
+    .access-account {
+        display:block;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .right button {
+        display:none !important;
+    }
+    .open-account {
+        display:block;
+    }
+  }
+
+  @media (max-width: 650px) {
+    #menu  {
+        width:100%;
+    }
+  }
