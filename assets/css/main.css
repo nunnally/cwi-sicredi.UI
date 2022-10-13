@@ -139,9 +139,13 @@ body {
 .sidebar {
     width: 193px;
     font-size: 19px;
+    float: left;
+    text-align: right;
+    margin-right: 100px;
 }
 .sidebar ul {
     margin-top: 12px;
+    
 }
 
 .sidebar li span {
