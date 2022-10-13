@@ -3,9 +3,7 @@ body {
     font-size: 2rem;
     color: gray;
     background-color: #FBFBFB;
-
 }
-
 .navbar{
     width: 100%;
     display: flex;
@@ -27,7 +25,6 @@ body {
     height: 100%;
     margin-top: -5px;
 }
-
 .navbar .container > * {
     display: flex;
     align-items: center;
@@ -40,8 +37,6 @@ body {
     font-weight: 600;
     border: none;
     outline: 0;
-
-
 }
 .navbar .container .access input {
     background-color : white; 
@@ -71,12 +66,9 @@ body {
     font-weight: 600;
     
 }
-
-
 .buttons {
     display: flex;
 }
-
 .buttons > * {
     display: flex;
     color:white;
@@ -88,7 +80,6 @@ body {
     transition: 0.3s;
 
 }
-
 .search {
     background: black;
     
@@ -97,7 +88,6 @@ body {
   background: #3FA111;;
 
 }
-
 .content {
     display: flex;
     flex-flow: row wrap;
@@ -106,7 +96,6 @@ body {
     margin: 0 auto;
     margin-top: 130px;
 }
-
 .content h1 {
     color: #737372;
     font-size: 3.5rem;
@@ -117,13 +106,11 @@ body {
     color:#3FA111;
 
 }
-
 .left {
     width: 100%;
     max-width: 414px;
     font-size: 12px;
 }
-
 .left p {
     font-size: 15px;
     font-weight: 300;
@@ -134,8 +121,6 @@ body {
 .middle {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.8);
 }
-
-
 .sidebar {
     width: 193px;
     font-size: 19px;
@@ -146,7 +131,6 @@ body {
     margin-top: 12px;
     
 }
-
 .sidebar li span {
     color: #737372;
     background: yellow;
@@ -155,7 +139,6 @@ body {
     font-weight: 600;
     padding: 0 10px;
 }
-
 .sidebar a {
     text-decoration: none;
     color: #737372;
@@ -163,3 +146,35 @@ body {
     font-weight: 300;
 
 }
+.menu {
+    position: fixed;
+    background-color: #3fa110;
+    width: 600px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    color: #fff;
+    
+}
+.menu .item{
+    margin: auto;
+    width: calc(100% - 16vw);
+    border-bottom: 2px solid rgba(212, 212, 212, 0.2);
+    margin-bottom: 10px;
+
+}
+.menu .item .title {
+    background-color: #35890D;
+    padding: 5px 10px;
+    font-size:20px;
+}
+.menu ul li a:link {
+    color: rgb(228, 226, 226);
+    font-size: 14px;
+    text-decoration: none;
+    padding: 8px;
+    }
+.blur div:not(.menu){
+    filter: blur(0.1rem);
+  }
