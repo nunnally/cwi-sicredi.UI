@@ -1,0 +1,162 @@
+body {
+    font-family: "Exo 2", sans-serif;
+    font-size: 2rem;
+    color: gray;
+    background-color: #FBFBFB;
+
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #FFFFFF;
+}
+
+.navbar .container {
+    width: 100%;
+    max-width: 1350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-top: -5px;
+}
+
+.navbar .container > * {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .navbar .container .access > *  {
+
+    color:gray;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    outline: 0;
+
+
+}
+.navbar .container .access input {
+    background-color : white; 
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 100;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 0.5rem;
+    width: 200px;
+}
+
+.navbar .container .access i {
+    color:#3FA111;
+}
+.navbar .container .right button {
+    border: none;
+    height: 55px;
+    background-color: #3FA111;
+    color: #dddada;
+    border-radius: 0.25rem;
+    width: 150px;
+    margin-right: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    
+}
+
+
+.buttons {
+    display: flex;
+}
+
+.buttons > * {
+    display: flex;
+    color:white;
+    cursor: pointer;
+    width: 5.5rem;
+    height: 5.5rem;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+
+}
+
+.search {
+    background: black;
+    
+}
+.stack {
+  background: #3FA111;;
+
+}
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 1350px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.content h1 {
+    color: #737372;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+}
+.content span {
+    color:#3FA111;
+
+}
+
+.left {
+    width: 100%;
+    max-width: 414px;
+    font-size: 12px;
+}
+
+.left p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-top: 25px;
+}
+
+.middle {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.8);
+}
+
+
+.sidebar {
+    width: 193px;
+    font-size: 19px;
+}
+.sidebar ul {
+    margin-top: 12px;
+}
+
+.sidebar li span {
+    color: #737372;
+    background: yellow;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #737372;
+    font-size: 17px;
+    font-weight: 300;
+
+}
