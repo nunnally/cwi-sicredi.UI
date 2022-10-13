@@ -146,7 +146,11 @@ body {
     font-weight: 300;
 
 }
-.menu {
+
+#menu i{
+    float: right;
+  }
+#menu {
     position: fixed;
     background-color: #3fa110;
     width: 600px;
@@ -157,24 +161,32 @@ body {
     color: #fff;
     
 }
-.menu .item{
+#menu .items{
+    padding-top:80px;
+
+}
+#menu .item{
     margin: auto;
     width: calc(100% - 16vw);
     border-bottom: 2px solid rgba(212, 212, 212, 0.2);
     margin-bottom: 10px;
 
 }
-.menu .item .title {
+#menu .item .title {
     background-color: #35890D;
     padding: 5px 10px;
     font-size:20px;
 }
-.menu ul li a:link {
+#menu ul li a:link {
     color: rgb(228, 226, 226);
     font-size: 14px;
     text-decoration: none;
     padding: 8px;
     }
-.blur div:not(.menu){
+.blur div:not(#menu){
     filter: blur(0.1rem);
   }
+
+.hide {
+    display:none;
+}

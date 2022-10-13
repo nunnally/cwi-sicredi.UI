@@ -10,4 +10,14 @@ function accessInput() {
     } else {
         input.removeAttribute("disabled");
     }
-  }
+}
+
+let closeMenuButton = document.getElementById("close-menu");
+let menuUI = document.getElementById("menu");
+
+closeMenuButton.addEventListener("click", closeOpenMenu);
+
+function closeOpenMenu() {
+    menuUI.classList.contains('hide')?menuUI.classList.remove('hide'):menuUI.classList.add('hide');
+    
+}
