@@ -1,0 +1,27 @@
+{% load static %}
+
+<div class="content">
+    <div class="left">
+        <h1>Nós temos a melhor oportunidade para <span>você</span></h1>
+        <p>Somos o parceiro ideal para te acompanhar e ajudar em todas as suas conquistas. De forma responsável e transparente nós vamos juntos organizar a sua vida financeira.</p>
+    </div>
+    <div class="middle">
+        <img src="{% static '/assets/images/banner.webp' %}" >  
+             
+    </div>
+    <div class="sidebar">
+        <span>Para Você</span>
+        <ul>
+        {% for value in left_items %}
+            <li>                    
+                {% if value.badge %}
+                <span id="span-pix">Novo</span>
+                {% endif %}
+                <a href="{{ value.href }}">
+                    {{ value.item }}
+                </a>
+            </li>
+        {% endfor %}
+          </ul>
+    </div>
+</div>
