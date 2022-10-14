@@ -5,12 +5,19 @@ Este repositório contém o desafio do Sicredi proposto pela CWI.
 ## Executando
 
 Para executar o primeiro nível, basta executar (abrir em um navegador) o arquivo index.html. Também é possível acessar através do seguinte link:   [Sicredi.UI](https://nunnally.github.io/cwi-sicredi.UI/). 
-### Django level
 
-Para acessar o conteúdo do próximo nível, basta mudar a para branch e seguir o seguinte roteiro:
+### Django branch
+
+Para acessar o conteúdo do próximo nível, basta mudar a para branch django e seguir o seguinte roteiro:
 
 ```bash
 # Clone o repositório e acesse a pasta no terminal
+
+# Execute o comando
+python manage.py runserver
+
+
+# Ou de forma mais detalhada:
 
 #instale as dependências 
 $ npm install 
