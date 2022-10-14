@@ -28,7 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'base',
     'menu',
-    'header',
+    'navbar',
     'content',
     
 ]
